@@ -1,3 +1,16 @@
+:warning:
+:warning:
+:warning:
+
+NYMag forked this project to fix a dependency resolution issue between `zenpy` and `apache-airflow`.
+A single `from __future__ import division` call in `zenpy` requires a version of `future > 17.0`,
+but `apache-airflow` requires a version of `future < 17.0`. NYMag runs `airflow` with Python 3, this fork
+will resolve the issue.
+
+:warning:
+:warning:
+:warning:
+
 [![Build Status](https://travis-ci.org/facetoe/zenpy.svg?branch=master)](https://travis-ci.org/facetoe/zenpy)
 
 # Zenpy
